@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Player
+    uniqueID: 4196592541
+    locked: 0
+  - name: Window
+    uniqueID: 4000254525
+    locked: 0
+  - name: Building
+    uniqueID: 2850391815
+    locked: 0
