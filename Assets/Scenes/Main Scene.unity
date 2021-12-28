@@ -1245,6 +1245,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4075fd64b6ed978438308f444d5205e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  windows:
+  - {fileID: 25845024}
+  - {fileID: 1364669016}
+  - {fileID: 1585499752}
+  - {fileID: 276319738}
+  - {fileID: 1971348548}
+  - {fileID: 1644751136}
+  - {fileID: 1479647486}
+  - {fileID: 1526393163}
+  - {fileID: 1610007071}
+  - {fileID: 1338705707}
+  - {fileID: 1870314725}
+  - {fileID: 1133819871}
+  - {fileID: 908422963}
+  - {fileID: 1759359883}
+  - {fileID: 1107365622}
+  - {fileID: 119358574}
 --- !u!1 &1364669015
 GameObject:
   m_ObjectHideFlags: 0
@@ -2228,6 +2245,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2128622261}
   - component: {fileID: 2128622260}
+  - component: {fileID: 2128622262}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2300,3 +2318,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2128622262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128622259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47880a7763195be4f841e98304a28f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testing: {fileID: 1644751136}
+  minPos: {x: -2.6, y: -4.5}
+  maxPos: {x: 3.4, y: 3}
+  xIncrement: 2
+  yIncrement: 2.5

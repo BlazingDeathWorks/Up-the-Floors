@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class WindowsManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    private Transform[] windows = null;
 
-    // Update is called once per frame
-    void Update()
+    public static Transform[] Windows { get; private set; }
+
+    //Initialize private windows to public Windows
+    private void Awake()
     {
-        
+        Windows = windows;
     }
 }
