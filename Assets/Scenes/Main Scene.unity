@@ -2330,7 +2330,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47880a7763195be4f841e98304a28f68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testing: {fileID: 1644751136}
   minPos: {x: -2.6, y: -4.5}
   maxPos: {x: 3.4, y: 3}
   xIncrement: 2
