@@ -6,7 +6,7 @@ using System;
 public class Light : MonoBehaviour
 {
     public static event Action LightLifeFinished;
-    private float timeSinceCreated = 0, lifeRate = 1f;
+    private float timeSinceCreated = 0, lifeRate = 1.5f;
 
     private void OnEnable()
     {
