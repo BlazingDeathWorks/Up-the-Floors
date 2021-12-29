@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 735980489209654226}
   - component: {fileID: 735980489209654228}
   - component: {fileID: 6249279786079278981}
+  - component: {fileID: 6201132538117650028}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -98374755
   m_SortingLayer: 1
-  m_SortingOrder: 100
+  m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -131,3 +132,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &6201132538117650028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735980489209654229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10562f445af809644b797868eb829404, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

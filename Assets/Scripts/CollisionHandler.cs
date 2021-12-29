@@ -1,18 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CollisionHandler : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    UnityEvent onTriggerEnter;
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        onTriggerEnter.Invoke();
+        Light instance;
+        if(collision.TryGetComponent(out instance))
+        {
+            instance.DestroyLight();
+        }
     }
 }
