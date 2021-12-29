@@ -25,7 +25,7 @@ public class ScoreManager : MonoBehaviour
         text.text = score.ToString();
     }
 
-    private void ResetScore()
+    public void ResetScore()
     {
         score = 0;
         UpdateScore();

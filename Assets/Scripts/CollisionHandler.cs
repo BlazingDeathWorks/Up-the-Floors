@@ -14,7 +14,7 @@ public class CollisionHandler : MonoBehaviour
         Light instance;
         if(collision.TryGetComponent(out instance))
         {
-            instance.DestroyLight();
+            instance.ReQueueLight();
         }
     }
 }

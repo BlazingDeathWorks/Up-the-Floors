@@ -50,7 +50,6 @@ public class PlayerMovementController : MonoBehaviour
     {
         //Define future position x
         float xPlacement = xIncrement * xValue + myTransform.position.x;
-        Debug.Log(xPlacement);
 
         //Restrict xPlacement
         if(xPlacement > maxPos.x)
@@ -71,7 +70,6 @@ public class PlayerMovementController : MonoBehaviour
     {
         //Define future position y
         float yPlacement = yIncrement * yValue + myTransform.position.y;
-        Debug.Log(yPlacement);
 
         //Restrict yPlacement
         if (yPlacement > maxPos.y)

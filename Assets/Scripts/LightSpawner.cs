@@ -23,6 +23,11 @@ public class LightSpawner : MonoBehaviour
         TimerManager.TimerEnded += InstantiateLight;
     }
 
+    private void OnDestroy()
+    {
+        TimerManager.TimerEnded -= InstantiateLight;
+    }
+
     //When Light Gameobject is destroyed...
     public void AddLightToQueue(GameObject lightObject)
     {
