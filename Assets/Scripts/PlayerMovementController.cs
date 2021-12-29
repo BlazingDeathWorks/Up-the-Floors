@@ -6,6 +6,7 @@ public class PlayerMovementController : MonoBehaviour
 {
     [SerializeField] private Vector2 minPos, maxPos;
     [SerializeField] private float xIncrement, yIncrement;
+    [SerializeField] private Vector2[] possibleStartingPositions;
     private Transform myTransform = null;
 
     // Start is called before the first frame update
@@ -16,7 +17,7 @@ public class PlayerMovementController : MonoBehaviour
 
     private void Start()
     {
-        myTransform.position = WindowsManager.Windows[Random.Range(0, WindowsManager.Windows.Length)].position;
+        myTransform.position = possibleStartingPositions[Random.Range(0, possibleStartingPositions.Length)];
     }
 
     // Update is called once per frame
@@ -49,6 +50,7 @@ public class PlayerMovementController : MonoBehaviour
     {
         //Define future position x
         float xPlacement = xIncrement * xValue + myTransform.position.x;
+        Debug.Log(xPlacement);
 
         //Restrict xPlacement
         if(xPlacement > maxPos.x)
@@ -69,9 +71,10 @@ public class PlayerMovementController : MonoBehaviour
     {
         //Define future position y
         float yPlacement = yIncrement * yValue + myTransform.position.y;
+        Debug.Log(yPlacement);
 
         //Restrict yPlacement
-        if(yPlacement > maxPos.y)
+        if (yPlacement > maxPos.y)
         {
             yPlacement = minPos.y;
         }

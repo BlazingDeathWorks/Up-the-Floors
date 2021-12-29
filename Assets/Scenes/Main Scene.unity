@@ -376,7 +376,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &130743808
 MonoBehaviour:
@@ -584,7 +584,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &450357071
 GameObject:
@@ -773,10 +773,10 @@ MonoBehaviour:
   m_enableVertexGradient: 1
   m_colorMode: 1
   m_fontColorGradient:
-    topLeft: {r: 1, g: 0, b: 0.361866, a: 1}
-    topRight: {r: 0.59607846, g: 0, b: 0.36078432, a: 1}
-    bottomLeft: {r: 1, g: 0, b: 0.361866, a: 1}
-    bottomRight: {r: 0.59607846, g: 0, b: 0.36078432, a: 1}
+    topLeft: {r: 0.91372555, g: 0.91372555, b: 0.91372555, a: 1}
+    topRight: {r: 1, g: 0.5647059, b: 0.5803922, a: 1}
+    bottomLeft: {r: 0.91372555, g: 0.91372555, b: 0.91372555, a: 1}
+    bottomRight: {r: 1, g: 0.5647059, b: 0.5803922, a: 1}
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
@@ -960,7 +960,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1107365621
 GameObject:
@@ -2159,6 +2159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0620067a67aacc94bb589eee12d9d138, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: {fileID: 626117214}
 --- !u!4 &1853451548
 Transform:
   m_ObjectHideFlags: 0
@@ -2171,7 +2172,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1870314724
 GameObject:
@@ -2344,6 +2345,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1106959049325886700, guid: 0325680d53596f14eaa87543cd5ad3be, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1853451547}
     - target: {fileID: 4311768974692376289, guid: 0325680d53596f14eaa87543cd5ad3be, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2354,7 +2359,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4311768974692376295, guid: 0325680d53596f14eaa87543cd5ad3be, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.562
+      value: -2.6
       objectReference: {fileID: 0}
     - target: {fileID: 4311768974692376295, guid: 0325680d53596f14eaa87543cd5ad3be, type: 3}
       propertyPath: m_LocalPosition.y
